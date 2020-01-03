@@ -4,6 +4,7 @@
   "description": "Desktop version for the game 2048 (https://play2048.co)",
   "main": "index.js",
   "scripts": {
+    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/the-wulv/2048-desktop/issues"
   },
-  "homepage": "https://github.com/the-wulv/2048-desktop#readme"
+  "homepage": "https://github.com/the-wulv/2048-desktop#readme",
+  "devDependencies": {
+    "electron": "^7.1.7"
+  }
 }
