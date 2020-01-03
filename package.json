@@ -1,0 +1,19 @@
+{
+  "name": "2048-desktop",
+  "version": "1.0.0",
+  "description": "Desktop version for the game 2048 (https://play2048.co)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the-wulv/2048-desktop.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/the-wulv/2048-desktop/issues"
+  },
+  "homepage": "https://github.com/the-wulv/2048-desktop#readme"
+}
