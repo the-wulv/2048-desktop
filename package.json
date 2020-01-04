@@ -2,10 +2,11 @@
   "name": "2048-desktop",
   "version": "1.0.0",
   "description": "Desktop version for the game 2048 (https://play2048.co)",
-  "main": "index.js",
+  "main": "app/index.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-builder --x64 --ia32"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,25 @@
   "devDependencies": {
     "electron": "^7.1.7",
     "electron-builder": "^21.2.0"
+  },
+  "build": {
+    "appId": "com.electron.2048-desktop",
+    "productName": "2048 - Desktop version",
+    "directories": {
+      "buildResources": "build",
+      "output": "dist/${version}/${os}-${arch}",
+      "app": "app"
+    },
+    "compression": "normal",
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "license": "LICENSE.txt"
+    }
   }
 }
