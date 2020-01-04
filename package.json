@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/the-wulv/2048-desktop#readme",
   "devDependencies": {
-    "electron": "^7.1.7"
+    "electron": "^7.1.7",
+    "electron-builder": "^21.2.0"
   }
 }
